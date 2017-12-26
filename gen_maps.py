@@ -25,5 +25,5 @@ with open("color_map.tex", "w") as f:
   f.write("%s\n" % '\n'.join(maps))
   maps = []
   for i, row in secondary.iterrows():
-    maps.append("\\definecolor\\col{}{{HTML}}{{\\col{}}}".format(row['key'], row['value']))
+    maps.append("\\definecolor{{col{}}}{{HTML}}{{\\col{}}}".format(row['key'], row['value']))
   f.write("%s\n" % '\n'.join(maps))
