@@ -16,7 +16,11 @@ with open("color_map.R", "w") as f:
   maps = []
   for i, row in secondary.iterrows():
     maps.append("'{}' = '{}'".format(row['key'], row['value']))
-  f.write("cateogory_colors = c(%s)\n" % ',\n\t'.join(maps))
+  f.write("category_colors = c(%s)\n" % ',\n\t'.join(maps))
+  maps = []
+  for i, row in secondary.iterrows():
+    maps.append("'{}' = '{}'".format(row['key'], row['name']))
+  f.write("category_names = c(%s)\n" % ',\n\t'.join(maps))
 
 with open("color_map.tex", "w") as f:
   maps = []
