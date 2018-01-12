@@ -15,9 +15,9 @@ distant,red,0,Distant
 motif,blue,0,Motif
 partialmotif,green,0,"Partial Motif"
 nomotif,red,0,"No Motif"
-bHLH,orange,0,bHLH
 ETS,purple,0,ETS
 homeodomain,maroon,0,homeodomain
+bHLH,orange,0,bHLH
 combined,green,0,combined
 experiment,maroon,0,Experiment
 control,orange,0,Control
